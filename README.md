@@ -1,3 +1,7 @@
+# 运行环境
+
+python2
+
 # cygwin安装
 
 wget git python2 python3 pip2 pip3
