@@ -1,3 +1,26 @@
+# cygwin安装
+
+wget git python2 python3 pip2 pip3
+libmysqlclient-dev gcc python-dev libevent-dev
+
+账号：blog_mini@163.com
+密码：blog_mini
+
+pip install virtualenv
+
+source venv/bin/activate
+//deactivate
+
+//pip install -r requirements/common.txt
+//pip install MySQL-python
+
+# 运行Blog_mini
+export DATABASE_URL=mysql://root:123456@127.0.0.1/blog_mini
+gunicorn manage:app
+
+部署文档
+http://blog.51cto.com/xpleaf/1748707
+
 # Blog_mini
 ### 1.功能强大的开源博客系统
 Blog_mini是一个开源的博客系统，用Python开发完成，具有简洁的界面和强大的后台管理，
@@ -34,4 +57,3 @@ Blog_mini是一个开源的博客系统，用Python开发完成，具有简洁�
 
     作者51cto博客：http://xpleaf.blog.51cto.com
     作者个人博客网站：http://www.xpleaf.com
-    
