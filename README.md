@@ -19,7 +19,8 @@ source venv/bin/activate
 //pip install MySQL-python
 
 # 运行Blog_mini
-export DATABASE_URL=mysql://root:123456@127.0.0.1/blog_mini
+source venv/bin/activate
+export DATABASE_URL=mysql://root:root@127.0.0.1/blog_mini
 gunicorn manage:app
 
 部署文档
